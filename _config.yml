@@ -26,26 +26,29 @@ highlighter: rouge
 # analytics-piwik-id: 1
 
 # if you don't want comments in your posts, set to false
-disqus: mydisqus
+# disqus: mydisqus
+disqus: false
 
 # if you don't have any of social below, comment the line
-facebook: ziyou.li.90
+# facebook: ziyou.li.90
+github: cnzero
+email: zerolee18@gmail.com
 twitter: zerolee18
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
-# linkedin: mylinkedin
+# linkedin: 自由-李-139a3496
 # youtube: myyoutube
 # spotify: myspotify
-github: cnzero
-# stackoverflow: 7044681/mystackoverflow
-# quora: userquora
+
+# stackoverflow: 4329365/zero
+# quora: Zero-Lee-4
 # reddit: username
 # medium: medium
 # vimeo: myvimeo
-zhihu: cnzero
-email: zerolee18@gmail.com
 
+
+# information that was shown below every blog article.
 authors:
     johndoe:
         name: John Doe
