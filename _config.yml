@@ -48,20 +48,20 @@ twitter: zerolee18
 # vimeo: myvimeo
 
 
-# information that was shown below every blog article.
+# author information that was shown below every blog article.
 authors:
-    johndoe:
-        name: John Doe
-        bio: A Man who travels the world eating noodles
+    cnzero:
+        name: Zero Lee
+        bio: To be zero, and specialize in one subject.
         external-image: false
         picture: assets/images/profile.jpg
         twitter: johndoe
-    jamesfoster:
-        name: James Foster
-        bio: A Man who develops software with coffee
-        external-image: false
-        picture: assets/images/james.jpg
-        twitter: jamesfoster
+    # jamesfoster:
+    #     name: James Foster
+    #     bio: A Man who develops software with coffee
+    #     external-image: false
+    #     picture: assets/images/james.jpg
+    #     twitter: jamesfoster
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
