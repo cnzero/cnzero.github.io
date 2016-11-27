@@ -49,13 +49,13 @@ twitter: zerolee18
 
 
 # author information that was shown below every blog article.
-authors:
-    cnzero:
-        name: Zero Lee
-        bio: To be zero, and specialize in one subject.
-        external-image: false
-        picture: assets/images/profile.jpg
-        twitter: johndoe
+# authors:
+#     cnzero:
+#         name: Zero Lee
+#         bio: To be zero, and specialize in one subject.
+#         external-image: false
+#         picture: assets/images/profile.jpg
+#         twitter: johndoe
     # jamesfoster:
     #     name: James Foster
     #     bio: A Man who develops software with coffee
