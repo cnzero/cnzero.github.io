@@ -41,7 +41,7 @@ description: Summary of SSH keys management.
 
 
 修改上图，考虑到更深的安全性，应达到如下图所示的效果。
-![](sshkey2.png)
+![](/assets/images/sshkey2.png)
 
 如图，虽然看起来更复杂些，但是相对而言就安全了许多——当然这种简单的添加修改方式相对于SSH加密根本不是一个量级上的保密措施。但是能想到了，就实现吧。
 所以，问题就变成了，在一台电脑上如何指定针对不同的服务去查询不同的SSH Key公钥以进行匹配。
