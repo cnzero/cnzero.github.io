@@ -16,6 +16,7 @@ description: Summary of SSH keys management.
 
 
 [TOC]
+
 最近由于出掉了手里的MacBook Pro，并台式机重装系统到了x64 Windows10，所以重新对个人Github与课题组的gitolite进行管理。由于最初对多个SSH Key管理得相当混乱，此时就顿时陷入了泥潭。
 花费了大半天时间，对原来的SSH Key组织推到重来。在这个过程中对config文件等有了更深入地理解，所以在此恢复一篇个人博客。
 
@@ -33,14 +34,14 @@ description: Summary of SSH keys management.
 
 为了能够尽量平滑地在各个电脑及系统上进行使用的切换，所写的代码尽量都需要在Github与gitolite上进行备份保存，并且简化代码复制传输的过程。
 其中一种比较偷懒的方式去维护 `公钥-私钥`， 就是，在每个系统上（注意不是电脑）上近产生一个默认的 `id_rsa `的SSH Key，并同一个Key应用于一个系统上的所有服务——同一个系统涉及的Github管理，gitolite管理，以及其他潜在的SSH Key相关的服务。
-![](file:///tmp/WizNote/ecf28fb4-c791-4a11-b961-da4a79354b5a/index_files/126a2a66-72c4-4199-baa3-bcdf22233c2d.png)
+![](/assets/images/sshkey1.png)
 
 如图所示，每个默认的 ` id_rsa ` 管理所有的服务。因此，这就存在一个安全隐患，如果一台电脑上的 SSH Key配破解，也就是所有的服务都被“偷窥”。或者此处打一个比喻，每个电脑上仅仅只有一个“篮子”，这个篮子里盛放了所有的东西，并仅有一个锁-钥匙。俗话说，所有的鸡蛋不能都放到一个篮子里去。那就多造几个篮子吧。
 
 
 
 修改上图，考虑到更深的安全性，应达到如下图所示的效果。
-![](file:///tmp/WizNote/ecf28fb4-c791-4a11-b961-da4a79354b5a/index_files/66762425-4844-4418-8f8f-f9566bf2011a.png)
+![](sshkey2.png)
 
 如图，虽然看起来更复杂些，但是相对而言就安全了许多——当然这种简单的添加修改方式相对于SSH加密根本不是一个量级上的保密措施。但是能想到了，就实现吧。
 所以，问题就变成了，在一台电脑上如何指定针对不同的服务去查询不同的SSH Key公钥以进行匹配。
