@@ -5,9 +5,8 @@ date: 2016-12-02 22:48
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
-- markdown
-- components
-- extra
+- server
+- SSH
 blog: true
 author: cnzero
 description: Summary of SSH keys management.
