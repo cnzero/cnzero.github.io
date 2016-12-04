@@ -50,6 +50,7 @@ description: Summary of SSH keys management.
 首先，这是一个plain text，并没有格式后缀，这应该在Linux系统上很常见了。直接用git bash里面的vim进行编辑，或者在Ubuntu的终端中完成。
 之前之所以混乱，就是对这个config文件理解混乱，理解不深。现在终于“头撞南墙”，撞多了，就理解深刻了一些。
 然后，现在直接放出config文件的代码，然后稍作其中的内容进行解释说明。
+
 ```
 # -----------------two styles for github.com-----------
 # ***normal style***
@@ -93,6 +94,7 @@ Host s409
     User git
     IdentityFile ~/.ssh/zeroWin10PC4Server409Superuser
 ```
+
 Host 可以理解为一种助记符或简化符号，方便以后进行ssh链接。为了省事儿，才在config文件里面描述了两种方式： ` normal style ` 和 ` abbreviation style ` 。并且在此config文件中做了很好的注释。作为探索的结果，不再赘述。
 当然config文件里面，不仅仅有以上的关键词， ` man ssh config ` 能够看到更多关键词及其赋值含义，值得探索。
 
