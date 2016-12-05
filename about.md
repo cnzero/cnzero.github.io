@@ -4,31 +4,26 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>About page of author-cnzero.</p>
 
-<h2>Skills</h2>
+# About
 
-<ul class="skill-list">
-	<li>HTML - Jade - Haml - Erb</li>
-	<li>Responsive (Mobile First)</li>
-	<li>CSS (Stylus, Sass, Less)</li>
-	<li>Css Frameworks (Bootstrap, Foundation)</li>
-	<li>Javascript (Design Patterns, Testes)</li>
-	<li>NodeJS</li>
-	<li>AngularJS - ReactJS</li>
-	<li>Grunt - Gulp - Yeoman</li>
-	<li>Git</li>
-	<li>PHP</li>
-	<li>Python</li>
-	<li>MySQL - MongoDB</li>
-	<li>Scrum and Kanban</li>
-	<li>TDD e Continuous Integration</li>
-</ul>
+### Major
 
-<h2>Projects</h2>
+Hi, I am cnzero, a PhD student in an institute of Chinese Academy of Sciences.
+I am studying surface EMG, and going to apply such a bio-signal to the rehabilitation robots.
 
-<ul>
-	<li><a href="https://github.com/">Lorem Lorem</a></li>
-	<li><a href="https://github.com/">Ipsum Dolor</a></li>
-	<li><a href="https://github.com/">Dolor Lorem</a></li>
-</ul>
+
+### Interests
+I am interested in many kinds of things, including programming languages, pattern recognition, Apple products, micro-controller, Internet of Things, and, and so on. 
+I have know about a lot of things, but seldom specilize in one things. 
+
+In recent several months, I almost lost the balance points between my PhD studying and interests. 
+
+### Purpose
+
+#### Reading
+__Reading, is almost the basic method or way that I get to know the world.__
+[Zhihu](https://www.zhihu.com), caught my eyes I was eager to get know deeply the world. As its slogan -- "Finding a bigger world" goes, I obtained a lot of benefits from here. 
+
+
+#### Writing
