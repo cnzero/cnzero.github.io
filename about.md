@@ -27,3 +27,4 @@ __Reading, is almost the basic method or way that I get to know the world.__
 
 
 #### Writing
+中文测试
