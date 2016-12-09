@@ -91,7 +91,7 @@ related: true
 # show next & prev links in blog post?
 blog-nav-links: true
 
-# show author block at the end of a post ?
+# show author block at the end of a post
 show-author: false
 
 # do you want some animations?
