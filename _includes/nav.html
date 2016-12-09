@@ -10,12 +10,14 @@ unsorted list,
 -->
 
     <ul class="list">
+        <!-- Home -->
         {% if page.title != "Home" %}
             <li class="item">
                 <a class="link" href="{{ site.url }}/">Home</a>
             </li>
         {% endif %}
 
+        <!-- Blog -->
         {% if site.blog == true %}
             {% if page.title != "Blog" %}
                 <li class="item">
@@ -24,6 +26,7 @@ unsorted list,
             {% endif %}
         {% endif %}
 
+        <!-- Projects -->
         {% if site.projects == true %}
             {% if page.title != "Projects" %}
                 <li class="item">
@@ -32,6 +35,16 @@ unsorted list,
             {% endif %}
         {% endif %}
 
+        <!-- Tags -->
+        {% if site.show-tags == true %}
+            {% if page.title != "Tags" %}
+                <li class="item">
+                    <a class="link" href="{{ site.url }}/tags">Tags</a>
+                </li>
+            {% endif %}
+        {% endif %}
+
+        <!-- About -->
         {% if site.about == true %}
             {% if page.title != "About" %}
                 <li class="item">
