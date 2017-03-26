@@ -3,3 +3,6 @@ _site
 .sass-cache
 .npm-debug.log
 Gemfile.lock
+
+# cache files
+*.swp
