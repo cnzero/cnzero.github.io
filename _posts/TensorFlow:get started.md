@@ -1,7 +1,7 @@
 ---
 title: "TensorFlow:get started.md"
 layout: post
-date: 2017-03-26 20:48
+date: 2017-03-25 20:48
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
