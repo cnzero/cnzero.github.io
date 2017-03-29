@@ -1,4 +1,17 @@
+---
+title: "TensorFlow:线性回归三段代码的比较"
+layout: post
+date: 2017-03-28 20:48
+image: /assets/images/markdown.jpg
+headerImage: /assets/screen-shot.png
+tag:
+- TensorFlow
+blog: true
+author: cnzero
+description: Learning notes of Google TensorFlow
+---
 [TOC]
+
 
 ## 目的
 省去必要的头与声明， 对关键部分进行比较与理解性说明。

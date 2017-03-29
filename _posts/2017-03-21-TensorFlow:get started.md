@@ -6,7 +6,6 @@ image: /assets/images/markdown.jpg
 headerImage: false
 tag:
 - TensorFlow
-- 
 blog: true
 author: cnzero
 description: Learning notes of Google TensorFlow
