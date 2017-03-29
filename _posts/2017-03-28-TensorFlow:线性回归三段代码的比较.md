@@ -3,7 +3,7 @@ title: "TensorFlow:线性回归三段代码的比较"
 layout: post
 date: 2017-03-28 20:48
 image: /assets/images/markdown.jpg
-headerImage: /assets/screen-shot.png
+headerImage: 
 tag:
 - TensorFlow
 blog: true
