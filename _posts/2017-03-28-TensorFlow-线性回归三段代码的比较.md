@@ -1,5 +1,5 @@
 ---
-title: "TensorFlow:线性回归三段代码的比较"
+title: "TensorFlow-线性回归三段代码的比较"
 layout: post
 date: 2017-03-28 20:48
 image: /assets/images/markdown.jpg
