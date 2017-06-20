@@ -12,4 +12,15 @@ description: Foundations of A Data Scientist
 ---
 
 [TOC]
-我把这当做是一个宏大的Project进行执行，旨在从基础做起一点点积累有关Data的专业知识。 我将其命名为DSF-Data Scientist Foundation。
+
+### 基本概念
+PCA - Principal Components Analysis
+ICA - Independent Components Analysis
+LDA - Linear Discriminant Analysis
+SVD - Singular Value Decomposition
+
+$$
+
+C_x
+
+$$
