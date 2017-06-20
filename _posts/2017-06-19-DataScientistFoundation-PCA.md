@@ -1,12 +1,12 @@
 ---
-title: "DataScientistFoundation-PCA.md"
+title: "DataScientistFoundation-PCA"
 layout: post
 date: 2017-03-21 20:48
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
 - DSF
-project: true
+projects: true
 author: cnzero
 description: Foundations of A Data Scientist
 ---

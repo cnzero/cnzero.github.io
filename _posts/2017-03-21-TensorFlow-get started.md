@@ -1,5 +1,5 @@
 ---
-title: "TensorFlow-get started.md"
+title: "TensorFlow-get started"
 layout: post
 date: 2017-03-21 20:48
 image: /assets/images/markdown.jpg
