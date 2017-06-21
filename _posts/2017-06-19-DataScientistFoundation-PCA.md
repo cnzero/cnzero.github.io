@@ -25,3 +25,6 @@ $$ C $$
 
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large E = m_{x}c^{2}
 " style="border:none;">
+
+这算是一个行内嵌入公式<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  m_{x}
+" style="border:none;">的例子。
