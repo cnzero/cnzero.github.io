@@ -13,18 +13,16 @@ description: Foundations of A Data Scientist
 
 [TOC]
 
-### 基本概念
-PCA - Principal Components Analysis
-ICA - Independent Components Analysis
-LDA - Linear Discriminant Analysis
-SVD - Singular Value Decomposition
+### 为什么需要进行降维？
+现在大家做研究或讨论，往往都已经涉及“大数据”了——该专有名词具有多层含义，此处并不打算进行可以区分，只是说明“数据量变多了”。数据量变多，就难免会出现两个问题：__噪声引入__ 和 __数据重复__ 。
+1. 噪声引入：
 
-$$ C $$
+  ![]({{ site.url }}/assets/images/PCA/Signal2NoiseVariance.jpg)
 
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;">
+2. 数据重复：
 
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large E = m_{x}c^{2}
-" style="border:none;">
+### PCA 作为一种降维方法
 
-这算是一个行内嵌入公式<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  m_{x}
-" style="border:none;">的例子。
+### PCA的解
+
+### 更多降维方法
