@@ -16,15 +16,15 @@ description: Foundations of A Data Scientist
 ### 为什么需要进行降维？
 现在大家做研究或讨论，往往都已经涉及“大数据”了——该专有名词具有多层含义，此处并不打算进行可以区分，只是说明“数据量变多了”。数据量变多，就难免会出现两个问题：__噪声引入__ 和 __数据重复__ 。
 
-1. 噪声引入:
+* 噪声引入:
 
 <center>
   ![](/assets/images/PCA/Signal2NoiseVariance.jpg)
 </center>
 
-  比如，我们通过摄像头记录下“弹簧振子”系统中弹簧末端的运动轨迹；不难发现，方差较小的方向上可以被认为是由于系统误差、测量误差等引入的波动。较小方差方向的量就可以被看做是“噪声”，这可以看做是一种比较合理的假设
+  比如，我们通过摄像头记录下“弹簧振子”系统中弹簧末端的运动轨迹；不难发现，方差较小的方向上可以被认为是由于系统误差、测量误差等引入的波动。较小方差方向的量就可以被看做是“噪声”，这可以看做是一种比较合理的假设。
 
-   ——对的，这是假设，所以就一定也存在其不合理之处，不合理之处就会导致算法失效。我认为应该是一贯的思维意识，没有什么算法放之四海而皆准，想用，就得首先明白算法的假设及其局限性。
+   ——对的，这是假设，所以就一定也存在其不合理之处，不合理之处就会导致算法失效。我认为这应该是一贯的思维意识，没有什么算法放之四海而皆准，想用，就得首先明白算法的假设及其局限性。
 
    此时，确实想起来一个更有意思的例子，之前在与人讨论时，曾被用来质疑该降维思路的有效性。
 
@@ -32,7 +32,7 @@ description: Foundations of A Data Scientist
 
    但最后发现，一群人当中头发数目的方差好大，由上述思想断定“头发数目”是一个较好特征，必须予以保留。但，再想想，也只能呵呵了。
 
-2. 数据重复：
+* 数据重复：
 
 <center>
   ![](/assets/images/PCA/Redundancy.jpg)
@@ -44,12 +44,12 @@ description: Foundations of A Data Scientist
 
   这又是一个假设，但显得更合理一些。此时，就有人在想：虽然两者可能不存在较大的相关性，那说不定存在“二次关系”或更复杂的非线性关系呢。是的，但研究起来就更难了。至少此时我们“扔掉”那些具有较大相关性的变量（之一）是非常合理的。
 
-### PCA 作为一种降维方法
+### 如何降维
 O.K. 针对上面所提到的两个问题：噪声引入和数据重复，我们分别提供相应的解决策略：
-1. 保留具有较大方差的方向，那就计算各个变量的方差；
+1. 保留具有较大方差的方向（变量或特征），那就计算各个变量的方差；
 2. 消除两两具有较大相关性的变量之一，那就计算两两之间的相关系数；
 
-而这两个东西，恰恰都存在于一个变量里面：协方差矩阵
+而这两个东西，恰恰都存在于一个统计量里面：协方差矩阵
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  C_{X}
 " style="border:none;">
 。 好，那就看看该变量的计算公式：
@@ -79,7 +79,7 @@ O.K. 针对上面所提到的两个问题：噪声引入和数据重复，我们
 1. 如果
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  C_{X}
 " style="border:none;">
-是对角阵，非对角线元素为零，那再好不过了，我们就根据对角线元素大小排序，保留那些较大的对角线元素，删除较小的对角线元素 --- 这样的操作对于数据集
+是对角阵，非对角线元素为零，那再好不过了。我们就根据对角线元素大小排序，保留那些较大的对角线元素，删除较小的对角线元素 --- 这样的操作对于数据集
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  X_{m \times n}
 " style="border:none;">
 而言就是去掉对应的行元素，最终达到降维的目的。
@@ -110,6 +110,60 @@ C_{Y} \\
 =  PC_XP
 " style="border:none;">
 </center>
-### PCA的解
+# PCA 作为一种降维方法
+关于其定义，我觉得Wikipedia写得已经很好了：
+> Principal component analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called principal components (or sometimes, principal modes of variation).
 
-### 更多降维方法
+已经比较形象地解释了PCA的降维过程——解耦，想一想，这不就是协方差矩阵对角化的过程么？非常好地契合了我们对协方差矩阵
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  C_{X}
+" style="border:none;">
+所提出的要求。
+
+再通俗地解释一遍PCA降维过程就是：
+> 通过对数据集的协方差矩阵解耦，依赖于方差排序，保留具有较大方差的变量，作为主要成分，达到维度降低的目的。
+
+当然，降维方法不止有PCA，还有更多方法（以后会陆续补充），其中依赖于“方差”的筛选方法被称为PCA。
+与之对比，LDA等提供了其他筛选方法，看起来也挺合理，作为另外的降维方法。
+
+首先得摆出定理——“对称矩阵可对角化”，以此为依据，保证了我们之前对协方差矩阵
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  C_{X}
+" style="border:none;">
+所提出的目标， 说明该目标也是可实现的。
+
+后面，就介绍两种常见的“对角化”实现方法：
+1. 特征值-特征向量分解；
+2. 奇异值分解。
+
+## 特征值-特征向量分解
+这个应该是最容易想到的方法了，根据对特征值-特征向量的定义：
+
+<center>
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  A v = \lambda v
+" style="border:none;">
+</center>
+并全部写成矩阵的形式：
+
+<center>
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  A V = V \Lambda
+" style="border:none;">
+</center>
+其中
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  A
+" style="border:none;">
+为实对称阵，
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  V
+" style="border:none;">
+由特征向量组成，其每一列表示一个特征向量；
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  \Lambda
+" style="border:none;">
+为对角阵，其对角线元素为特征向量所对应的特征值
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  \lambda
+" style="border:none;"> 。
+
+在Matlab代码中，其中关键一步是求该特征值-特征向量，参考函数`eig`。
+
+## 奇异值分解
+
+### 其他说明
+1. 预处理；
+2. 归一化；
