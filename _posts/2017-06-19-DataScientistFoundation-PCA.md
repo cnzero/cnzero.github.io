@@ -18,9 +18,7 @@ description: Foundations of A Data Scientist
 
 * 噪声引入:
 
-<center>
   ![](/assets/images/PCA/Signal2NoiseVariance.jpg)
-</center>
 
   比如，我们通过摄像头记录下“弹簧振子”系统中弹簧末端的运动轨迹；不难发现，方差较小的方向上可以被认为是由于系统误差、测量误差等引入的波动。较小方差方向的量就可以被看做是“噪声”，这可以看做是一种比较合理的假设。
 
@@ -34,9 +32,7 @@ description: Foundations of A Data Scientist
 
 * 数据重复：
 
-<center>
   ![](/assets/images/PCA/Redundancy.jpg)
-</center>
 
   举个简单的例子，想量化一群人的特征，大家想出了很多办法和角度，比如身高、体重、性别等。但是呢，针对身高这一特征，有人用单位“米”表示，有人用“英寸”表示，然后都各执一词，将数据记录在表格里面。
 
